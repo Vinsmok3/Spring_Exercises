@@ -14,19 +14,5 @@ public class FirstApi1Application {
         SpringApplication.run(FirstApi1Application.class, args);
     }
 
-    @RestController
-    class NameController {
 
-        @GetMapping("/name")
-        public String getName() {
-            return "John";
-        }
-
-        @PostMapping("/name")
-        public String postName(@RequestBody String name) {
-            return new StringBuilder(name).reverse().toString();
-        }
-
-
-    }
 }
