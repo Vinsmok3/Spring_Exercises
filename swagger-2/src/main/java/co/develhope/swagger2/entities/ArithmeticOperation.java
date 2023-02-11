@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,5 +19,5 @@ public class ArithmeticOperation {
     @ApiModelProperty(value = "The description of the operation", example = "addend + addend = sum")
     private String description;
     @ApiModelProperty(value = "A list of properties of the specific operation", example = "['Anti-commutativity', 'Non-associativity', 'Predecessor']")
-    private String[] properties;
+    private List<String> properties = new ArrayList<>();
 }
