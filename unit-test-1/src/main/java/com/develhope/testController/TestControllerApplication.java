@@ -1,4 +1,4 @@
-package co.develhope.testController;
+package com.develhope.testController;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
