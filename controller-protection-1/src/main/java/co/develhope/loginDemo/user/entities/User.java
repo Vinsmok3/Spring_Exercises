@@ -3,6 +3,7 @@ package co.develhope.loginDemo.user.entities;
 import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 
 @Entity
@@ -39,4 +40,4 @@ public class User {
                     @JoinColumn(name = "ROLE_ID") })
     private Set<Role> roles;
 }
-}
+
